@@ -54,4 +54,4 @@ max_epoch : 400
 grad_norm_clip : 10
 task: 'classification'
 data_augmentation: 'rotation'
-ckpts: './pretrained_bases/femae-epoch-300.pth'
+ckpts: 'pretrained_bases/point-pqae-ckpt-epoch-300.pth'

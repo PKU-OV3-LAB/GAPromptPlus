@@ -32,6 +32,10 @@ model : {
   group_size: 32,
   num_group: 64,
   encoder_dims: 1024,
+  adapter_config: {
+    adapter_dim: 32,
+    adapter_drop_path_rate: 0.1,
+  },
   decoder_depth: 4,
   head_dim: 3,
   point_number: 10,

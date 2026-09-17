@@ -351,7 +351,7 @@ if __name__ == "__main__":
         )
 
     # parsing_scene(
-    #     scene_path=Path("/mnt/e/datasets/raw/scannet/scans/scene0230_00"),
+    #     scene_path=Path("/path/to/scannet/scans/scene0230_00"),
     #     output_root=args.output_root,
     #     split=split,
     #     frame_skip=args.frame_skip,

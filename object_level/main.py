@@ -84,6 +84,11 @@ def main():
     # Older classification configs may not define task; preserve backward compatibility.
     task = getattr(config, "task", "classification")
     # run
+    if getattr(config, 'evaluation_only', False) and not args.test:
+        raise ValueError(
+            'This legacy compatibility config is evaluation-only. '
+            'Use --test --ckpts /path/to/fine_tuned_checkpoint.pth.'
+        )
     if args.test:
         if task == "segmentation":
             module_seg_test(args, config, train_writer, val_writer)

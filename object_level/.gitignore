@@ -37,7 +37,8 @@ experiments/
 
 data/
 
-pretrained_bases
+pretrained_bases/*
+!pretrained_bases/README.md
 
 */__pycache__
 */*/__pycache__

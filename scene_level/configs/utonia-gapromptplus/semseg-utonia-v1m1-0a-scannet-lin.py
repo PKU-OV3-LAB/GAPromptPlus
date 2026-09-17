@@ -1,3 +1,5 @@
+import os as _os
+
 _base_ = ["../_base_/default_runtime.py"]
 
 # misc custom setting
@@ -51,7 +53,7 @@ model = dict(
     ],
     freeze_backbone=True,
 )
-weight = "weights/Utonia/utonia.pth"
+weight = _os.environ.get("UTONIA_CKPT", "weights/Utonia/utonia.pth")
 # scheduler settings
 epoch = 100
 optimizer = dict(type="AdamW", lr=0.002, weight_decay=0.02)
@@ -67,7 +69,7 @@ param_dicts = []
 
 # dataset settings
 dataset_type = "ScanNetDataset"
-data_root = "data/scannet"
+data_root = _os.environ.get("SCANNET_ROOT", "data/scannet")
 
 data = dict(
     num_classes=20,

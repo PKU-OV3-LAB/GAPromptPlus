@@ -31,6 +31,10 @@ model:
     group_size: 32,
     num_group: 64,
     encoder_dims: 1024,
+  adapter_config: {
+    adapter_dim: 16,
+    adapter_drop_path_rate: 0.1,
+  },
     decoder_depth: 4,
     loss: cdl2,
     weight_center: 1,

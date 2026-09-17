@@ -1,3 +1,5 @@
+import os as _os
+
 _base_ = ["../_base_/default_runtime.py"]
 crop_h = 518
 crop_w = 518
@@ -52,7 +54,7 @@ model = dict(
     ],
     freeze_backbone=True,
 )
-weight = "weights/Utonia/utonia.pth"
+weight = _os.environ.get("UTONIA_CKPT", "weights/Utonia/utonia.pth")
 # scheduler settings
 epoch = 50
 eval_epoch = 50
@@ -69,7 +71,7 @@ param_dicts = []
 
 # dataset settings
 dataset_type = "NuScenesImagePointDataset"
-data_root = "data/nuScenes"
+data_root = _os.environ.get("NUSCENES_ROOT", "data/nuScenes")
 ignore_index = -1
 names = [
     "barrier",

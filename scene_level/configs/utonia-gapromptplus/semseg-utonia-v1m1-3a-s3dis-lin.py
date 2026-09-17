@@ -1,3 +1,5 @@
+import os as _os
+
 _base_ = ["../_base_/default_runtime.py"]
 
 # misc custom setting
@@ -51,7 +53,7 @@ model = dict(
     ],
     freeze_backbone=True,
 )
-weight = "weights/Utonia/utonia.pth"
+weight = _os.environ.get("UTONIA_CKPT", "weights/Utonia/utonia.pth")
 # scheduler settings
 epoch = 100
 eval_epoch = 100
@@ -68,7 +70,7 @@ param_dicts = []
 
 # dataset settings
 dataset_type = "S3DISDataset"
-data_root = "data/S3DIS"
+data_root = _os.environ.get("S3DIS_ROOT", "data/S3DIS")
 
 data = dict(
     num_classes=13,

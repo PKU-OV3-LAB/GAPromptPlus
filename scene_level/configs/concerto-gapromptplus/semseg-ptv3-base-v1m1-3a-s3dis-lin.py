@@ -1,3 +1,5 @@
+import os as _os
+
 _base_ = ["../_base_/default_runtime.py"]
 
 # misc custom setting
@@ -47,7 +49,7 @@ model = dict(
     ],
     freeze_backbone=True,
 )
-weight = "weights/Concerto/concerto_base.pth"
+weight = _os.environ.get("CONCERTO_BASE_CKPT", "weights/Concerto/concerto_base.pth")
 # scheduler settings
 epoch = 100
 optimizer = dict(type="AdamW", lr=0.002, weight_decay=0.02)
@@ -63,7 +65,7 @@ param_dicts = []
 
 # dataset settings
 dataset_type = "S3DISDataset"
-data_root = "data/S3DIS"
+data_root = _os.environ.get("S3DIS_ROOT", "data/S3DIS")
 
 data = dict(
     num_classes=13,

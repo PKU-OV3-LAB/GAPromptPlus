@@ -33,7 +33,7 @@
 </p>
 
 <div align="center">
-Official implementation of <strong>GAPrompt++</strong>. The paper has been accepted for publication.
+Official implementation of <strong>GAPrompt++</strong>, accepted for publication in <strong>IEEE TPAMI, 2026</strong>.
 </div>
 
 <p align="center">
@@ -69,7 +69,8 @@ reconstruction-derived classification datasets are available on Hugging Face:
 - [uCO3D80](https://huggingface.co/datasets/zxAi/uCO3D80): 20,464 point clouds in 80 classes.
 
 See [docs/DATASETS.md](docs/DATASETS.md) for directory settings and integrity
-verification.
+verification. Run each entry point from its task directory, as shown below; all
+published configs use repository-relative paths and contain no machine-specific paths.
 
 <table>
   <tr>
@@ -130,9 +131,11 @@ The reported scene results use one GPU, batch size 1, and full-fragment voting.
 
 ## Checkpoints
 
-Checkpoint links will be added after the public model license is finalized.
-The configuration files required to reproduce the paper tables are already
-included in `object_level/cfgs/` and `scene_level/configs/`.
+Upstream pretrained backbones, exact target filenames, and availability are listed
+in [docs/PRETRAINED_MODELS.md](docs/PRETRAINED_MODELS.md). Public upstream weights
+can be downloaded now; Point-PQAE, Utonia, and GAPrompt++ downstream checkpoints
+remain explicitly marked as pending rather than being silently assumed. The paper
+configs are included in `object_level/cfgs/` and `scene_level/configs/`.
 
 ## Citation
 

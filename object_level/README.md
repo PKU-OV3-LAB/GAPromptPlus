@@ -19,3 +19,11 @@ python main.py \
 
 For evaluation, add `--test` and provide the fine-tuned checkpoint through the
 corresponding command-line option used by the selected runner.
+
+
+## Pretrained weights
+
+See [`../docs/PRETRAINED_MODELS.md`](../docs/PRETRAINED_MODELS.md) for official
+upstream downloads and exact target filenames. The PointGPT-L ScanObjectNN
+OBJ_BG config is evaluation-only and requires `--test --ckpts` with its
+fine-tuned GAPrompt++ checkpoint.

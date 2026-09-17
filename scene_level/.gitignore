@@ -5,7 +5,8 @@ __pycache__
 **/dist/
 *.so
 exp
-weights
+weights/*
+!weights/README.md
 data
 log
 outputs/

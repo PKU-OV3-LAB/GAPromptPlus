@@ -1,6 +1,24 @@
 import os, re, sys, types
 from collections import abc
 
+SCENE_ROOT = os.path.realpath(os.path.join(os.path.dirname(__file__), '..'))
+RUNTIME_PATH_KEYS = {'weight', 'data_root'}
+
+def _resolve_runtime_paths(value, key=None):
+    if isinstance(value, abc.Mapping):
+        for child_key, child_value in list(value.items()):
+            value[child_key] = _resolve_runtime_paths(child_value, child_key)
+    elif value.__class__.__module__.endswith("configs.base"):
+        for child_key, child_value in list(vars(value).items()):
+            setattr(value, child_key, _resolve_runtime_paths(child_value, child_key))
+    elif isinstance(value, list):
+        value = [_resolve_runtime_paths(item) for item in value]
+    elif isinstance(value, tuple):
+        value = tuple(_resolve_runtime_paths(item) for item in value)
+    elif key in RUNTIME_PATH_KEYS and isinstance(value, str) and value:
+        value = os.path.realpath(os.path.join(SCENE_ROOT, os.path.expandvars(os.path.expanduser(value))))
+    return value
+
 def _is_property(obj, name):
     return isinstance(getattr(type(obj), name, None), property)
 def _is_method(x):
@@ -57,4 +75,4 @@ def load_config(cfg_path):
         cfg = cfg_base.update(cfg)
 
     cfg = Config(cfg)
-    return cfg
+    return _resolve_runtime_paths(cfg)
