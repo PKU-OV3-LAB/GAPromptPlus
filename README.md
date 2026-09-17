@@ -11,10 +11,12 @@
 </div>
 
 <div align="center">
+  <small>
   <sup>1</sup>Wangxuan Institute of Computer Technology, Peking University<br>
   <sup>2</sup>Department of Automation, Tsinghua University<br>
   <sup>3</sup>Intelligent Science and Technology Academy of CASIC<br>
   <sup>4</sup>Institute of Software, Chinese Academy of Sciences
+  </small>
 </div>
 
 <p align="center">
