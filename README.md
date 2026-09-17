@@ -134,14 +134,18 @@ included in `object_level/cfgs/` and `scene_level/configs/`.
 ## Citation
 
 ```bibtex
-@article{ai2026gapromptplusplus,
-  title  = {{GAP}rompt++: Multi-Granular Geometry-Aware Point Cloud Prompt for 3D Vision Model},
-  author = {Ai, Zixiang and Cui, Zhenyu and Guo, Yufei and Qiang, Wenwen and Chen, Lei and Lu, Jiwen and Zhou, Jiahuan},
-  year   = {2026}
+@ARTICLE{11676080,
+  author={Ai, Zixiang and Cui, Zhenyu and Guo, Yufei and Qiang, Wenwen and Chen, Lei and Lu, Jiwen and Zhou, Jiahuan},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  title={GAPrompt++: Multi-Granular Geometry-Aware Point Cloud Prompt for 3D Vision Model},
+  year={2026},
+  volume={},
+  number={},
+  pages={1-18},
+  keywords={Modeling;Clouds;Tuning;Training;Computers;Visual systems;Geometry;Point Cloud;Prompt Learning;Parameter-efficient Fine-tuning},
+  doi={10.1109/TPAMI.2026.3729984}
 }
 ```
-
-Final publication metadata will replace the provisional entry above.
 
 ## Acknowledgement
 

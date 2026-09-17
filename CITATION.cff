@@ -18,3 +18,26 @@ authors:
   - given-names: Jiahuan
     family-names: Zhou
 repository-code: "https://github.com/PKU-OV3-LAB/GAPromptPlus"
+preferred-citation:
+  type: article
+  title: "GAPrompt++: Multi-Granular Geometry-Aware Point Cloud Prompt for 3D Vision Model"
+  authors:
+    - given-names: Zixiang
+      family-names: Ai
+    - given-names: Zhenyu
+      family-names: Cui
+    - given-names: Yufei
+      family-names: Guo
+    - given-names: Wenwen
+      family-names: Qiang
+    - given-names: Lei
+      family-names: Chen
+    - given-names: Jiwen
+      family-names: Lu
+    - given-names: Jiahuan
+      family-names: Zhou
+  journal: "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+  year: 2026
+  start: 1
+  end: 18
+  doi: "10.1109/TPAMI.2026.3729984"
