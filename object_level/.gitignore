@@ -56,6 +56,5 @@ datasets/__pycache__
 
 *.egg-info*
 
-extensions
 visualize
 vis*
