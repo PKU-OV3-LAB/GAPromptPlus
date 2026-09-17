@@ -143,7 +143,7 @@ included in `object_level/cfgs/` and `scene_level/configs/`.
   volume={},
   number={},
   pages={1-18},
-  keywords={Modeling;Clouds;Tuning;Training;Computers;Visual systems;Geometry;Point Cloud;Prompt Learning;Parameter-efficient Fine-tuning},
+  keywords={Modeling;Clouds;Tuning;Training;Computers;Visual systems;Geometry;Conferences;Three-dimensional displays;Propagation;Point Cloud;Prompt Learning;Parameterefficient Fine-tuning},
   doi={10.1109/TPAMI.2026.3729984}
 }
 ```
