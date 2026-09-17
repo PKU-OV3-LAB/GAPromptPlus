@@ -1,0 +1,17 @@
+from .build import build_model_from_cfg
+
+import models.Point_MAE
+import models.prompt_MAE
+import models.Point_MAE_segment
+import models.Point_MAE_sem_segment
+import models.prompt_MAE_segment
+import models.prompt_MAE_sem_segment
+import models.PointTransformerCLIP
+import models.prompt_PointTransformerCLIP
+import models.gapromptplus_MAE
+import models.gapromptplus_PointGPT
+import models.PointGPT
+import models.GapPointGPTLegacy
+import models.gapromptplus_MAE_segment
+import models.gapromptplus_PointTransformerDINO
+import models.PointTransformerDINO

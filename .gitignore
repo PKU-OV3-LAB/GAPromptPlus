@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+
+# Environments and editors
+.venv/
+venv/
+.idea/
+.vscode/
+.DS_Store
+._*
+
+# Experiment outputs
+experiments/
+outputs/
+work_dirs/
+results/
+wandb/
+tensorboard/
+*.log
+
+# Model weights and generated data
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+data/
+datasets_cache/
+
+# Native builds
+build/
+dist/
+*.egg-info/

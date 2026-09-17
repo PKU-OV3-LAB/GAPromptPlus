@@ -1,0 +1,4 @@
+NAME: S3DISDataset
+DATA_ROOT: data/Stanford3dDataset_v1.2_Aligned_Version
+TEST_AREA: 5
+VOXEL_SIZE: 0.04

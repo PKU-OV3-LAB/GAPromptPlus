@@ -1,0 +1,11 @@
+from .build import build_dataset_from_cfg
+import datasets.ShapeNet55Dataset
+import datasets.ModelNetDataset
+import datasets.ModelNetDatasetFewShot
+import datasets.ScanObjectNNDataset
+import datasets.PartNormalDataset
+import datasets.S3DISBlockDataset
+import datasets.RealSensorDataset
+import datasets.MACGSDataset
+import datasets.uCO3D80Dataset
+import datasets.GSModel60Dataset
