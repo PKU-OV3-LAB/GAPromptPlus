@@ -24,6 +24,7 @@
 
 <p align="center">
   <a href="https://github.com/PKU-OV3-LAB/GAPromptPlus"><img src="https://img.shields.io/badge/Code-GitHub-181717.svg?logo=github" alt="GitHub"></a>
+  <a href="https://ieeexplore.ieee.org/document/11676080"><img src="https://img.shields.io/badge/Paper-IEEE%20TPAMI-00629B.svg?logo=ieee" alt="IEEE TPAMI"></a>
   <a href="https://github.com/zhoujiahuan1991/ICML2025-GAPrompt"><img src="https://img.shields.io/badge/Previous-GAPrompt-4B3FE3.svg" alt="GAPrompt"></a>
   <a href="https://huggingface.co/datasets/zxAi/GSModel60"><img src="https://img.shields.io/badge/Dataset-GSModel60-FFD21E.svg?logo=huggingface" alt="GSModel60"></a>
   <a href="https://huggingface.co/datasets/zxAi/uCO3D80"><img src="https://img.shields.io/badge/Dataset-uCO3D80-FFD21E.svg?logo=huggingface" alt="uCO3D80"></a>
